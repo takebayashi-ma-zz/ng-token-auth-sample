@@ -1,0 +1,23 @@
+{
+  "name": "ng-token-auth-sample",
+  "homepage": "https://github.com/takebayashi-ma/ng-token-auth-sample",
+  "authors": [
+    "makoto takebayashi <takebayashi-ma@dmm.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.6",
+    "angular-ui-router": "0.2.13",
+    "ng-token-auth": "~0.0.29"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-token-auth-sample</title>
+</head>
+<body>
+  <script type="text/javascript" src="base.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <div ng-app="app">
+    <div ui-view></div>
+    <div class="row" ng-controller="LoginController">
+       <div class="col-lg-6 col-lg-offset-3">
+          <!-- START panel-->
+
+          <div class="panel panel-info">
+             <div class="panel-heading portlet-handler">
+                <em class="icon-login"></em>&nbsp;
+                <strong>ログインフォームです</strong>
+             </div>
+             <div class="panel-body">
+                <br />
+                <form class="form-horizontal" ng-submit="submitLogin(loginForm)" role="form" ng-init="loginForm = {}">
+                   <button type="button" class="btn btn-danger btn-lg center-block" ng-click="authenticate('google', { params: { favorite_color : 'green' } } )"><i class="fa fa-google-plus-square"></i><span class="lead">Google</span></button>
+                </form>
+
+                <button ng-click="signOut()" class="btn btn-primary">Signout</button>
+
+             </div>
+             <div class="panel-footer">
+               <div ng-show="user.signedIn">{{ user}}</div>
+                <small class="text-danger" ng-show="!user.signedIn"><em class="fa fa-info-circle"></em>&nbsp;ログインできます</small>
+             </div>
+          </div>
+       </div>
+    </div>
+
+
+
+  </div>
+</body>
+</html>
