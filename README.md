@@ -1,0 +1,1 @@
+# ng-token-auth-sample
